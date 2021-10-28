@@ -1,0 +1,32 @@
+﻿<Window x:Class="RestuaruntApp.bill"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RestuaruntApp"
+        mc:Ignorable="d"
+        Title="bill" Height="547" Width="900.8" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Loaded="bill_load">
+    <Window.Background>
+        <ImageBrush ImageSource="whitebackground.jpg"/>
+    </Window.Background>
+    <Grid x:Name="startbtn">
+
+        <ListView x:Name="billdata" ItemsSource="{Binding myBills}" Margin="0,0,0.4,161.6" FontSize="20" SelectionChanged="ListView_SelectionChanged" ContextMenuOpening="click">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn DisplayMemberBinding="{Binding Name}" Header="Item Name" Width="500"></GridViewColumn>
+                    <GridViewColumn DisplayMemberBinding="{Binding quantity}" Header="QTY" Width="100"></GridViewColumn>
+                    <GridViewColumn DisplayMemberBinding="{Binding priceOfItem}" Header="Item Price" Width="150"></GridViewColumn>
+
+                </GridView>
+            </ListView.View>
+
+        </ListView>
+        <Label Content="Total Amount RS." HorizontalAlignment="Left" Margin="36,375,0,0" VerticalAlignment="Top" Width="207" Height="44" FontSize="22" FontFamily="Segoe UI Black"/>
+        <TextBlock x:Name="amountbx" HorizontalAlignment="Left" Margin="248,368,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="46" Width="140" FontFamily="Yu Gothic UI Semibold" FontSize="33"/>
+        <Button x:Name="menubtn" Content="Menu" HorizontalAlignment="Left" Margin="36,453,0,0" VerticalAlignment="Top" Width="134" Height="46" FontFamily="Segoe UI Black" FontSize="22" Background="White" BorderBrush="#FF41FF3C" Click="menubtn_Click"/>
+        <Button x:Name="confirmbtn" Content="    Click here&#xD;&#xA;confirm order&#xD;&#xA;" HorizontalAlignment="Left" Margin="426,373,0,0" VerticalAlignment="Top" Width="204" Height="64" FontFamily="Segoe UI Black" FontSize="22" Background="#FF98FF77" BorderBrush="#FF41FF3C" Click="confirmbtn_Click"/>
+        <Button x:Name="confirmbtn_Copy" Content="Clear Oder" HorizontalAlignment="Left" Margin="670,375,0,0" VerticalAlignment="Top" Width="204" Height="64" FontFamily="Segoe UI Black" FontSize="22" Background="#FFFF7C33" BorderBrush="#FFFC8308" Click="confirmbtn_Copy_Click_1"/>
+
+    </Grid>
+</Window>

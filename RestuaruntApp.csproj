@@ -1,0 +1,418 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{232F840E-6C48-4782-9DCC-0A5BC025F235}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RestuaruntApp</RootNamespace>
+    <AssemblyName>RestuaruntApp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WhatsAppApi, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\WhatsAppAPI.15.4.29\lib\net40\WhatsAppApi.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="brevragers.xaml.cs">
+      <DependentUpon>brevragers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Chocolate Cookie.xaml.cs">
+      <DependentUpon>Chocolate Cookie.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CiniMinis.xaml.cs">
+      <DependentUpon>CiniMinis.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CocaCola.xaml.cs">
+      <DependentUpon>CocaCola.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Drpeppr.xaml.cs">
+      <DependentUpon>Drpeppr.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Dutch Apple Pie.xaml.cs">
+      <DependentUpon>Dutch Apple Pie.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Frozencoc.xaml.cs">
+      <DependentUpon>Frozencoc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FrozenFantaICEE.xaml.cs">
+      <DependentUpon>FrozenFantaICEE.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HERSHEY%27S Sundae.xaml.cs">
+      <DependentUpon>HERSHEY%27S Sundae.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="HERSHEY%27SSundaePie.xaml.cs">
+      <DependentUpon>HERSHEY%27SSundaePie.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="IcedTea.xaml.cs">
+      <DependentUpon>IcedTea.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MinuteMaidLemonade.xaml.cs">
+      <DependentUpon>MinuteMaidLemonade.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PiemadewithTWIX.xaml.cs">
+      <DependentUpon>PiemadewithTWIX.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SpicyCrispyChickenCaesar.xaml.cs">
+      <DependentUpon>SpicyCrispyChickenCaesar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="sweets.xaml.cs">
+      <DependentUpon>sweets.xaml</DependentUpon>
+    </Compile>
+    <Page Include="BaconCheesewhoppe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BBQBaconCrispyChicken.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BBQBaconWhopper.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="bill.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="brevragers.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="bugerlistxaml.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Chocolate Cookie.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CiniMinis.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CocaCola.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CrispyChickenCaesarxaml.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DetailPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Drpeppr.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Dutch Apple Pie.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Frozencoc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FrozenFantaICEE.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Grilled Chicken.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HERSHEY%27S Sundae.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HERSHEY%27SSundaePie.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="IcedTea.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaconCheesewhoppe.xaml.cs">
+      <DependentUpon>BaconCheesewhoppe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BBQBaconCrispyChicken.xaml.cs">
+      <DependentUpon>BBQBaconCrispyChicken.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BBQBaconWhopper.xaml.cs">
+      <DependentUpon>BBQBaconWhopper.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="bill.xaml.cs">
+      <DependentUpon>bill.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BillData.cs" />
+    <Compile Include="bugerlistxaml.xaml.cs">
+      <DependentUpon>bugerlistxaml.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CrispyChickenCaesarxaml.xaml.cs">
+      <DependentUpon>CrispyChickenCaesarxaml.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DetailPage.xaml.cs">
+      <DependentUpon>DetailPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Grilled Chicken.xaml.cs">
+      <DependentUpon>Grilled Chicken.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="menucard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MinuteMaidLemonade.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PiemadewithTWIX.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SpicyCrispyChickenCaesar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="sweets.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="menucard.xaml.cs">
+      <DependentUpon>menucard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="buger2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgroun3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Background2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgrounfoods.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="backgrounfoods.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="buger6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="background4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="backgroun5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BaconCheeseWhopper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="whitebackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BBQBaconCrispyChicken.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BBQBaconWhopper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CrispyChickenCaesarSandwich.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="GrilledChicken.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SpicyCrispyChickenCaesar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bugerlogo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bgricon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="breakfatsicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="sweetsicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="palateicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bdback.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bkback.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bkback2jpg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bkbge.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="preview.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Frozen Coke.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Frozen Fanta Cherry ICEE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Iced_Tea.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Minute Maid Lemonade.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Sprite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Dr Pepper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Coca Cola.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="93341.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ice23jpg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ice5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Fire-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="p1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="p2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="p3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="p4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="p5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Chocolate Chip Cookie.png" />
+    <Resource Include="Cini Minis.png" />
+    <Resource Include="Dutch Apple Pie3.png" />
+    <Resource Include="HERSHEY%27S Chocolate Fudge Sundae.png" />
+    <Resource Include="HERSHEY%27S Sundae Pie.png" />
+    <Resource Include="Pie made with TWIX.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="beveargesicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="GrilledChickenCaesarSandwich.png" />
+    <Resource Include="IMPOSSIBLE WHOPPER.png" />
+    <Resource Include="TripleStackerKing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="y1.jpg" />
+    <Resource Include="Y2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="b1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

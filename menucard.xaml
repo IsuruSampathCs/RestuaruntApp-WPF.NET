@@ -1,0 +1,36 @@
+﻿<Window x:Class="RestuaruntApp.menucard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RestuaruntApp"
+        mc:Ignorable="d"
+        Title="menucard" Height="547" Width="900.8" Icon="buger2.jpg"  WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid Cursor="">
+        <Grid.Background>
+            <ImageBrush ImageSource="b1.jpg"/>
+        </Grid.Background>
+        <Button x:Name="bugerlistbtn" Content="" HorizontalAlignment="Left" Margin="22,10,0,0" VerticalAlignment="Top" Width="254" Height="213" FontSize="30" FontFamily="Franklin Gothic Demi Cond" Foreground="Black" Click="bugerlistbtn_Click" MouseEnter="mouseon" MouseLeave="mouseoff" >
+            <Button.Background>
+                <ImageBrush ImageSource="bgricon.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="beveragersbtn" Content="" HorizontalAlignment="Left" Margin="316,10,0,0" VerticalAlignment="Top" Width="254" Height="213" FontSize="25" FontFamily="Franklin Gothic Demi Cond" Foreground="Black" Click="beveragersbtn_Click" MouseEnter="sizeup2" MouseLeave="sizedown2" >
+            <Button.Background>
+                <ImageBrush ImageSource="beveargesicon.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="drinkbtn" Content="" HorizontalAlignment="Left" Margin="611,10,0,0" VerticalAlignment="Top" Width="254" Height="213" FontSize="25" FontFamily="Franklin Gothic Demi Cond" Foreground="Black" Click="Button_Click_1" MouseEnter="size5" MouseLeave="sizedown5" RenderTransformOrigin="0.816,0.495" >
+            <Button.Background>
+                <ImageBrush ImageSource="sweetsicon.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Back" Content="&lt;Back" HorizontalAlignment="Left" Margin="22,446,0,0" VerticalAlignment="Top" Width="254" Height="66" FontSize="30" FontFamily="MS Reference Sans Serif" Background="#FF0C0303" Foreground="White" Opacity="0.8" Click="Back_Click"/>
+        <Button x:Name="seeTable" Content="     &#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xA;TO See Oder List" HorizontalAlignment="Left" Margin="138,228,0,0" VerticalAlignment="Top" Width="254" Height="213" FontSize="29" FontFamily="MS Reference Sans Serif" Foreground="Black" BorderBrush="#FF42FF44" Click="seeTable_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="palateicon.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="cancel" Content="Cancel Trasaction&#xA;           X" HorizontalAlignment="Left" Margin="438,228,0,0" VerticalAlignment="Top" Width="254" Height="213" BorderBrush="#FF202020" FontFamily="Tahoma" FontSize="30" Click="closebtnclick" ClickMode="Press" Background="#FFFF3D3D"/>
+    </Grid>
+</Window>

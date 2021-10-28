@@ -1,0 +1,31 @@
+﻿<Window x:Class="RestuaruntApp.IcedTea"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RestuaruntApp"
+        mc:Ignorable="d"
+        Title="IcedTea" Height="542" Width="900.8" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Image HorizontalAlignment="Left" Height="516" Margin="164,-3,0,-0.2" VerticalAlignment="Top" Width="526" Source="Iced_Tea.png" RenderTransformOrigin="0,0" Opacity="0.615">
+            <Image.Effect>
+                <BlurEffect/>
+            </Image.Effect>
+        </Image>
+        <Label Content="Iced Tea" HorizontalAlignment="Left" Margin="318,0,0,0" VerticalAlignment="Top" Width="212" Height="66" FontSize="45" FontFamily="Sitka Small"/>
+        <Label Content="Brewed fresh daily, our Iced Tea pairs seamlessly with many menu favorites.&#xD;&#xA; Also available in unsweetened iced tea.The perfect way to stay refreshed." HorizontalAlignment="Left" Height="119" Margin="10,53,0,0" VerticalAlignment="Top" Width="884" FontSize="24" FontFamily="Yu Gothic UI Semibold"/>
+        <Label Content="Select Size" HorizontalAlignment="Left" Margin="19,194,0,0" VerticalAlignment="Top" Height="57" Width="198" FontSize="34" FontFamily="Yu Gothic UI Semibold" Background="White" Opacity="0.8"/>
+        <Button x:Name="back" Content="&lt;Back" HorizontalAlignment="Left" Margin="10,434,0,0" VerticalAlignment="Top" Width="114" Height="74" FontSize="30" FontFamily="Segoe UI Black" Background="White" BorderBrush="Black" Click="back_Click"/>
+        <Label Content="RS." HorizontalAlignment="Left" VerticalAlignment="Top" Margin="176,456,0,-3.2" Height="60" Width="57" FontSize="35"/>
+        <TextBlock x:Name="pricebox" HorizontalAlignment="Left" Margin="233,428,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" Height="60" FontSize="32" FontFamily="Segoe UI Black"/>
+        <TextBox x:Name="quantitybcw" HorizontalAlignment="Left" Height="54" Margin="298,368,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="102" Background="White" BorderBrush="#FF3DFF00" FontSize="25" TextChanged="quantity_TextChanged" Text="&#xA;"/>
+        <Button x:Name="minze" Content="-" HorizontalAlignment="Left" VerticalAlignment="Top" Width="87" Margin="176,368,0,0" Height="54" FontSize="30" FontFamily="Segoe UI Black" Background="#FF6C6C6C" Foreground="#FF71FF3B" Click="minze_Click"/>
+        <Button x:Name="pluse" Content="+" HorizontalAlignment="Left" VerticalAlignment="Top" Width="87" Margin="428,368,0,0" Height="54" FontSize="30" FontFamily="Segoe UI Black" Background="#FF747474" Foreground="#FF0AFF30" Click="pluse_Click"/>
+        <Button x:Name="addCartbtn" Content="  Add &#xA;To Cart" HorizontalAlignment="Left" Margin="429,436,0,0" VerticalAlignment="Top" Width="86" Height="72" Background="#FF3DFF00" FontSize="25" FontFamily="Sitka Banner" Click="addCartbtn_Click"/>
+        <RadioButton x:Name="large" Content="Large" HorizontalAlignment="Left" Margin="410,205,0,0" VerticalAlignment="Top" Height="57" Width="120" FontSize="29" FontFamily="Segoe UI Black" BorderBrush="Black" Background="White" Checked="large_Checked"/>
+        <RadioButton x:Name="small" Content="Small" HorizontalAlignment="Left" Margin="270,204,0,0" VerticalAlignment="Top" Height="57" Width="120" FontSize="30" FontFamily="Segoe UI Black" Background="White" BorderBrush="Black" Foreground="Black" Checked="small_Checked"/>
+        <Image x:Name="bugersizeimge" HorizontalAlignment="Left" Height="231" VerticalAlignment="Top" Width="252" Margin="597,215,0,0" Source="Iced_Tea.png"/>
+        <TextBlock x:Name="sizeblock" HorizontalAlignment="Left" Margin="551,463,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="36" Width="311" FontSize="25" FontFamily="Segoe UI Black"/>
+
+    </Grid>
+</Window>
